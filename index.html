@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>diogogalvao</title>
+  <meta name="theme-color" content="#1c2225">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    html,
+    body,
+    h1,
+    figure {
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      background-color: #283034;
+      background-image: url(/background-tile.webp);
+      color: #fff;
+      font-family: sans-serif;
+    }
+
+    #cover {
+      display: block;
+      width: 100%;
+      height: auto;
+      min-height: 168px;
+      object-fit: cover;
+    }
+
+    main {
+      box-sizing: border-box;
+      max-width: 1920px;
+      width: 100%;
+      margin: auto auto;
+      padding-top: 1.2rem;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    figure {
+      position: relative;
+      overflow: hidden;
+      box-sizing: border-box;
+      break-inside: avoid;
+      padding-bottom: 1.2rem;
+      width: 100%;
+    }
+
+    .img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background-color: rgba(0, 0, 0, 0.3);
+      color: #fff;
+    }
+
+    figcaption {
+      box-sizing: border-box;
+      padding: 0.5em;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+    }
+
+    figcaption::before {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 1px;
+      font-size: 1.5rem;
+      width: 1.5em;
+      height: 1.5em;
+      border-radius: 50%;
+      cursor: pointer;
+      background-color: rgba(64, 64, 64, 0.2);
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    figcaption:focus::before {
+      display: none;
+    }
+
+    small {
+      display: block;
+      font-size: 0.8em;
+    }
+
+    @media (min-width: 617px) {
+	main, figure { padding: 4px; }
+	figcaption { position: absolute; transform: translateY(100%); transition: xtransform 500ms; bottom: 0; left: 4px; right: 4px; }
+	figcaption:focus { transform: translateY(-4px); }
+	figcaption::before { content: '︙'; top: calc(-1.5em - 4px - 1px); }
+	#img-20230402-131041-02 { width: 27.6775%; }
+	#IMG-4539-darktable { width: 72.3225%; }
+	#img-20230221-181804-01 { width: 75.4585%; }
+	#img-20230121-144643-01 { width: 24.5415%; }
+	#img-20230120-110501-01-2 { width: 54.1593%; }
+	#IMG-4106-darktable { width: 45.8407%; }
+	#img-20230120-093945-01 { width: 27.6893%; }
+	#IMG-2998-01 { width: 72.3107%; }
+	#IMG-2777-darktable { width: 51.0633%; }
+	#IMG-2256-darktable { width: 48.9367%; }
+	#IMG-2202-darktable,#IMG-1771-darktable-03 { width: 45.8216%; }
+	#IMG-2197-darktable,#IMG-4808-4k { width: 54.1784%; }
+	#IMG-2044-darktable { width: 49.3159%; }
+	#IMG-2032-darktable { width: 50.6841%; }
+	#IMG-2011-darktable,#IMG-1412-darktable-01,#IMG-6024-2,#IMG-5932,#DSC08434,#DSC06852,#DSC04885,#DSC03364,#DSC03340,#DSC00791-darktable,#DSC08616 { width: 50%; }
+	#IMG-0718-03 { width: 31.1%; }
+	#IMG-0506 { width: 68.9%; }
+	#img-20210822-163646-2 { width: 63.7711%; }
+	#img-20210815-143529-2 { width: 36.2289%; }
+	#img-20210606-145416-darktable-01 { width: 54.176%; }
+	#IMG-8041-darktable { width: 45.824%; }
+	#DSC02262- { width: 66.3909%; }
+	#IMG-7185-darktable { width: 33.6091%; }
+	#IMG-6749-darktable { width: 50.009%; }
+	#IMG-6612 { width: 49.991%; }
+	#IMG-6362-01-01 { width: 49.9879%; }
+	#IMG-6122-darktable { width: 50.0121%; }
+	#IMG-521x,#img-20170325-114825-darktable-01,#IMG-20150813-090955-darktable { width: 100%; }
+	#IMG-1140-darktable { width: 51.0884%; }
+	#IMG-1073-darktable { width: 23.0582%; }
+	#IMG-0815-2-01-01 { width: 25.8534%; }
+	#IMG-20150811-161509-darktable { width: 33.617%; }
+	#IMG190-darktable { width: 66.383%; }
+	#img-4652864780-8c30cfabab-o { width: 54.482%; }
+	#DSC08532 { width: 45.518%; }
+	#DSC06066 { width: 36.2344%; }
+	#DSC05611 { width: 63.7656%; }
+}
+
+@media (min-width: 1257px) {
+	main, figure { padding: 9px; }
+	figcaption { position: absolute; transform: translateY(100%); transition: xtransform 500ms; bottom: 0; left: 9px; right: 9px; }
+	figcaption:focus { transform: translateY(-9px); }
+	figcaption::before { content: '︙'; top: calc(-1.5em - 9px - 1px); }
+	#img-20230402-131041-02 { width: 13.3188%; }
+	#IMG-4539-darktable { width: 33.6668%; }
+	#img-20230221-181804-01 { width: 39.6852%; }
+	#img-20230121-144643-01 { width: 13.3292%; }
+	#img-20230120-110501-01-2 { width: 32.9703%; }
+	#IMG-4106-darktable { width: 27.9861%; }
+	#img-20230120-093945-01 { width: 11.0719%; }
+	#IMG-2998-01 { width: 27.9717%; }
+	#IMG-2777-darktable { width: 34.2698%; }
+	#IMG-2256-darktable,#IMG-2202-darktable { width: 32.8651%; }
+	#IMG-2197-darktable { width: 36.7726%; }
+	#IMG-2044-darktable { width: 31.19%; }
+	#IMG-2032-darktable { width: 32.0375%; }
+	#IMG-2011-darktable,#IMG-1412-darktable-01 { width: 40.6499%; }
+	#IMG-0718-03 { width: 18.7003%; }
+	#IMG-0506 { width: 27.8664%; }
+	#img-20210822-163646-2 { width: 24.8738%; }
+	#img-20210815-143529-2 { width: 14.3997%; }
+	#img-20210606-145416-darktable-01 { width: 32.8601%; }
+	#IMG-8041-darktable { width: 42.5219%; }
+	#DSC02262- { width: 37.9208%; }
+	#IMG-7185-darktable { width: 19.5573%; }
+	#IMG-6749-darktable { width: 33.3426%; }
+	#IMG-6612 { width: 33.3307%; }
+	#IMG-6362-01-01 { width: 33.3267%; }
+	#IMG-6122-darktable { width: 33.3413%; }
+	#IMG-6024-2,#IMG-5932 { width: 33.3294%; }
+	#IMG-521x { width: 56.9683%; }
+	#IMG-4808-4k { width: 43.0317%; }
+	#IMG-1771-darktable-03 { width: 33.6198%; }
+	#IMG-1140-darktable { width: 33.6301%; }
+	#IMG-1073-darktable { width: 15.4696%; }
+	#IMG-0815-2-01-01 { width: 17.2806%; }
+	#img-20170325-114825-darktable-01 { width: 30.1295%; }
+	#IMG-20150813-090955-darktable { width: 69.8705%; }
+	#IMG-20150811-161509-darktable { width: 19.9675%; }
+	#IMG190-darktable { width: 38.7632%; }
+	#img-4652864780-8c30cfabab-o { width: 41.2693%; }
+	#DSC08532,#DSC08434,#DSC06852,#DSC03364,#DSC03340,#DSC00791-darktable,#DSC08616 { width: 33.3333%; }
+	#DSC06066 { width: 22.3317%; }
+	#DSC05611,#DSC04885 { width: 38.8341%; }
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <img id="cover" loading="eager" width="3200" height="420" alt="Sentado em um chão de ripas de madeira com uma vegetação ao fundo; usando boné, camisa azul de manga comprida e uma pequena mochila; fotografando uma arara azul que andava bem próximo." srcset="
+      /IMG_8474_crop4_1280w_dall_e.png 1280w,
+      /IMG_8474_crop4_1920w_dall_e.png 1920w,
+      /IMG_8474_crop4_3200w_dall_e.png 3200w" sizes="100vw" src="/IMG_8474_crop4_3200w_dall_e.png" />
+  </header>
+
+  <main>
+                  <figure id="img-20230402-131041-02">
+          <img class="img" loading="eager" width="2338" height="4160" src="img/20230402_131041-02_616w.webp" alt="" srcset="img/20230402_131041-02_616w.webp 616w, img/20230402_131041-02_338w.webp 338w, img/20230402_131041-02_236w.webp 236w" sizes="(max-width: 1255px) 616px, (max-width: 1919px) 338px, 236px">          <figcaption tabindex="0">2 de abril de 2023</figcaption>
+        </figure>
+              <figure id="IMG-4539-darktable">
+          <img class="img" loading="eager" width="1920" height="1280" src="img/IMG_4539_darktable_895w.webp" alt="">          <figcaption tabindex="0">Lua Minguante em 55mm, f/8.0, 0.3&quot;, ISO 100<small>T5i EF-S 18-55, Rio de Janeiro, 24 de março de 2023</small></figcaption>
+        </figure>
+              <figure id="img-20230221-181804-01">
+          <img class="img" loading="eager" width="3418" height="1923" src="img/20230221_181804-01_934w.webp" alt="" srcset="img/20230221_181804-01_934w.webp 934w, img/20230221_181804-01_737w.webp 737w" sizes="(max-width: 1919px) 934px, 737px">          <figcaption tabindex="0">Morro Dois Irmãos<small>Praia de Ipanema, Rio de Janeiro, 21 de fevereiro de 2023</small></figcaption>
+        </figure>
+              <figure id="img-20230121-144643-01">
+          <img class="img" loading="lazy" width="2322" height="4128" src="img/20230121_144643-01_616w.webp" alt="" srcset="img/20230121_144643-01_616w.webp 616w, img/20230121_144643-01_299w.webp 299w, img/20230121_144643-01_236w.webp 236w" sizes="(max-width: 1255px) 616px, (max-width: 1919px) 299px, 236px">          <figcaption tabindex="0">Cachorro andarilho<small>Bichinho, Prados, Minas Gerais, 21 de janeiro de 2023</small></figcaption>
+        </figure>
+              <figure id="img-20230120-110501-01-2">
+          <img class="img" loading="lazy" width="4128" height="2322" src="img/20230120_110501-01~2_668w.webp" alt="">          <figcaption tabindex="0">Serra de São José<small>Tiradentes, Minas Gerais, 20 de janeiro de 2023</small></figcaption>
+        </figure>
+              <figure id="IMG-4106-darktable">
+          <img class="img" loading="lazy" width="3840" height="2558" src="img/IMG_4106_darktable_616w.webp" alt="" srcset="img/IMG_4106_darktable_616w.webp 616w, img/IMG_4106_darktable_515w.webp 515w" sizes="(max-width: 1919px) 616px, 515px">          <figcaption tabindex="0">Cachorro no restaurante<small>Tiradentes, Minas Gerais, 20 de janeiro de 2023</small></figcaption>
+        </figure>
+              <figure id="img-20230120-093945-01">
+          <img class="img" loading="lazy" width="2322" height="4128" src="img/20230120_093945-01_616w.webp" alt="" srcset="img/20230120_093945-01_616w.webp 616w, img/20230120_093945-01_338w.webp 338w, img/20230120_093945-01_193w.webp 193w" sizes="(max-width: 1255px) 616px, (max-width: 1919px) 338px, 193px">          <figcaption tabindex="0">Tiradentes, Minas Gerais<small>20 de janeiro de 2023</small></figcaption>
+        </figure>
+              <figure id="IMG-2998-01">
+          <img class="img" loading="lazy" width="2000" height="1333" src="img/IMG_2998-01_616w.webp" alt="" srcset="img/IMG_2998-01_616w.webp 616w, img/IMG_2998-01_895w.webp 895w, img/IMG_2998-01_515w.webp 515w" sizes="(max-width: 1255px) 616px, (max-width: 1919px) 895px, 515px">          <figcaption tabindex="0">18 de outubro de 2022</figcaption>
+        </figure>
+              <figure id="IMG-2777-darktable">
+          <img class="img" loading="lazy" width="1920" height="1226" src="img/IMG_2777_darktable_634w.webp" alt="">          <figcaption tabindex="0">Blue<small>Amazon Tupana Lodge, Amazonas, 17 de outubro de 2022</small></figcaption>
+        </figure>
+              <figure id="IMG-2256-darktable">
+          <img class="img" loading="lazy" width="1920" height="1280" src="img/IMG_2256_darktable_616w.webp" alt="">          <figcaption tabindex="0">Pluto<small>Amazon Tupana Lodge, Amazonas, 15 de outubro de 2022</small></figcaption>
+        </figure>
+              <figure id="IMG-2202-darktable">
+          <img class="img" loading="lazy" width="1920" height="1280" src="img/IMG_2202_darktable_616w.webp" alt="">          <figcaption tabindex="0">Céu da manhã na Amazônia<small>Amazon Tupana Lodge, Amazonas, 15 de outubro de 2022</small></figcaption>
+        </figure>
+              <figure id="IMG-2197-darktable">
+          <img class="img" loading="lazy" width="1920" height="1080" src="img/IMG_2197_darktable_682w.webp" alt="">          <figcaption tabindex="0">Lima e Eduardo no Rio Tupana<small>Amazon Tupana Lodge, Amazonas, 15 de outubro de 2022</small></figcaption>
+        </figure>
+              <figure id="IMG-2044-darktable">
+          <img class="img" loading="lazy" width="1920" height="1280" src="img/IMG_2044_darktable_616w.webp" alt="">          <figcaption tabindex="0">Pitoco<small>Amazon Tupana Lodge, Amazonas, 14 de outubro de 2022</small></figcaption>
+        </figure>
+              <figure id="IMG-2032-darktable">
+          <img class="img" loading="lazy" width="1920" height="1245" src="img/IMG_2032_darktable_625w.webp" alt="">          <figcaption tabindex="0">Nascer do Sol na Amazônia<small>Amazon Tupana Lodge, Amazonas, 14 de outubro de 2022</small></figcaption>
+        </figure>
+              <figure id="IMG-2011-darktable">
+          <img class="img" loading="lazy" width="1920" height="1280" src="img/IMG_2011_darktable_756w.webp" alt="">          <figcaption tabindex="0">Nascer do Sol no Rio Tupana<small>Amazon Tupana Lodge, Amazonas, 14 de outubro de 2022</small></figcaption>
+        </figure>
+              <figure id="IMG-1412-darktable-01">
+          <img class="img" loading="lazy" width="3240" height="2160" src="img/IMG_1412_darktable_01_756w.webp" alt="">          <figcaption tabindex="0">Alfredo Peixerico<small>3 de abril de 2022</small></figcaption>
+        </figure>
+              <figure id="IMG-0718-03">
+          <img class="img" loading="lazy" width="2337" height="3507" src="img/IMG_0718-03_616w.webp" alt="" srcset="img/IMG_0718-03_616w.webp 616w, img/IMG_0718-03_381w.webp 381w" sizes="(max-width: 1255px) 616px, 381px">          <figcaption tabindex="0">Cachorro na Pequena Finlândia<small>Penedo, Rio de Janeiro, 31 de agosto de 2021</small></figcaption>
+        </figure>
+              <figure id="IMG-0506">
+          <img class="img" loading="lazy" width="3840" height="2560" src="img/IMG_0506_616w.webp" alt="" srcset="img/IMG_0506_616w.webp 616w, img/IMG_0506_852w.webp 852w" sizes="(max-width: 1255px) 616px, 852px">          <figcaption tabindex="0">Cogumelo no jardim<small>Penedo, Rio de Janeiro, 30 de agosto de 2021</small></figcaption>
+        </figure>
+              <figure id="img-20210822-163646-2">
+          <img class="img" loading="lazy" width="4160" height="3120" src="img/20210822_163646_2_616w.webp" alt="" srcset="img/20210822_163646_2_616w.webp 616w, img/20210822_163646_2_788w.webp 788w, img/20210822_163646_2_456w.webp 456w" sizes="(max-width: 1255px) 616px, (max-width: 1919px) 788px, 456px">          <figcaption tabindex="0">Dily e Melissa<small>22 de agosto de 2021</small></figcaption>
+        </figure>
+              <figure id="img-20210815-143529-2">
+          <img class="img" loading="lazy" width="3120" height="4160" src="img/20210815_143529_2_616w.webp" alt="" srcset="img/20210815_143529_2_616w.webp 616w, img/20210815_143529_2_445w.webp 445w, img/20210815_143529_2_256w.webp 256w" sizes="(max-width: 1255px) 616px, (max-width: 1919px) 445px, 256px">          <figcaption tabindex="0">Paçoca<small>15 de agosto de 2021</small></figcaption>
+        </figure>
+              <figure id="img-20210606-145416-darktable-01">
+          <img class="img" loading="lazy" width="3558" height="2001" src="img/20210606_145416_darktable_01_669w.webp" alt="">          <figcaption tabindex="0">Melissa<small>6 de junho de 2021</small></figcaption>
+        </figure>
+              <figure id="IMG-8041-darktable">
+          <img class="img" loading="lazy" width="3490" height="2326" src="img/IMG_8041_darktable_616w.webp" alt="" srcset="img/IMG_8041_darktable_616w.webp 616w, img/IMG_8041_darktable_791w.webp 791w" sizes="(max-width: 1919px) 616px, 791px">          <figcaption tabindex="0">1 de janeiro de 2020</figcaption>
+        </figure>
+              <figure id="DSC02262-">
+          <img class="img" loading="lazy" width="1920" height="1440" src="img/DSC02262__821w.webp" alt="" srcset="img/DSC02262__821w.webp 821w, img/DSC02262__704w.webp 704w" sizes="(max-width: 1919px) 821px, 704px">          <figcaption tabindex="0">Dily<small>21 de abril de 2019</small></figcaption>
+        </figure>
+              <figure id="IMG-7185-darktable">
+          <img class="img" loading="lazy" width="1820" height="2731" src="img/IMG_7185_darktable_616w.webp" alt="" srcset="img/IMG_7185_darktable_616w.webp 616w, img/IMG_7185_darktable_412w.webp 412w" sizes="(max-width: 1255px) 616px, 412px">          <figcaption tabindex="0">23 de março de 2019</figcaption>
+        </figure>
+              <figure id="IMG-6749-darktable">
+          <img class="img" loading="lazy" width="4096" height="2730" src="img/IMG_6749_darktable_616w.webp" alt="">          <figcaption tabindex="0">21 de março de 2019</figcaption>
+        </figure>
+              <figure id="IMG-6612">
+          <img class="img" loading="lazy" width="4096" height="2731" src="img/IMG_6612_616w.webp" alt="">          <figcaption tabindex="0">‟All The Small Things”<small>Jalapão, Tocantins, 21 de março de 2019</small></figcaption>
+        </figure>
+              <figure id="IMG-6362-01-01">
+          <img class="img" loading="lazy" width="4085" height="2724" src="img/IMG_6362-01-01_616w.webp" alt="Horizonte aberto; céu azul parcialmente coberto por nuvens; vegetação rasteira em verde e amarelo, com poucas árvores; uma estrada de terra leva a um pequeno monte em formato cúbico ao fundo, no centro da imagem.">          <figcaption tabindex="0">Horizonte visto da Pedra Furada<small>Jalapão, Tocantins, 20 de março de 2019</small></figcaption>
+        </figure>
+              <figure id="IMG-6122-darktable">
+          <img class="img" loading="lazy" width="4063" height="2708" src="img/IMG_6122_darktable_616w.webp" alt="">          <figcaption tabindex="0">19 de março de 2019</figcaption>
+        </figure>
+              <figure id="IMG-6024-2">
+          <img class="img" loading="lazy" width="4096" height="2731" src="img/IMG_6024~2_616w.webp" alt="">          <figcaption tabindex="0">Primeira folha do outono<small>Jalapão, Tocantins, 19 de março de 2019</small></figcaption>
+        </figure>
+              <figure id="IMG-5932">
+          <img class="img" loading="lazy" width="4096" height="2731" src="img/IMG_5932_616w.webp" alt="">          <figcaption tabindex="0">Pôr do Sol na Praia da Graciosa<small>Palmas, Tocantins, 18 de março de 2019</small></figcaption>
+        </figure>
+              <figure id="IMG-521x">
+          <img class="img" loading="lazy" width="2560" height="1080" src="img/IMG_521x_616w.webp" alt="" srcset="img/IMG_521x_616w.webp 616w, img/IMG_521x_1240w.webp 1240w" sizes="(max-width: 1255px) 616px, 1240px">          <figcaption tabindex="0">1 de dezembro de 2018</figcaption>
+        </figure>
+              <figure id="IMG-4808-4k">
+          <img class="img" loading="lazy" width="3840" height="2160" src="img/IMG_4808_4k_801w.webp" alt="">          <figcaption tabindex="0">1 de setembro de 2018</figcaption>
+        </figure>
+              <figure id="IMG-1771-darktable-03">
+          <img class="img" loading="lazy" width="2622" height="1748" src="img/IMG_1771_darktable_03_616w.webp" alt="">          <figcaption tabindex="0">24 de março de 2018</figcaption>
+        </figure>
+              <figure id="IMG-1140-darktable">
+          <img class="img" loading="lazy" width="4755" height="3169" src="img/IMG_1140_darktable_630w.webp" alt="">          <figcaption tabindex="0">21 de março de 2018</figcaption>
+        </figure>
+              <figure id="IMG-1073-darktable">
+          <img class="img" loading="lazy" width="3224" height="4837" src="img/IMG_1073_darktable_616w.webp" alt="" srcset="img/IMG_1073_darktable_616w.webp 616w, img/IMG_1073_darktable_280w.webp 280w" sizes="(max-width: 1255px) 616px, 280px">          <figcaption tabindex="0">20 de março de 2018</figcaption>
+        </figure>
+              <figure id="IMG-0815-2-01-01">
+          <img class="img" loading="lazy" width="1824" height="2433" src="img/IMG_0815~2-01-01_616w.webp" alt="" srcset="img/IMG_0815~2-01-01_616w.webp 616w, img/IMG_0815~2-01-01_315w.webp 315w" sizes="(max-width: 1255px) 616px, 315px">          <figcaption tabindex="0">Calango no Rio Roncador<small>Chapada Diamantina, Bahia, 19 de março de 2018</small></figcaption>
+        </figure>
+              <figure id="img-20170325-114825-darktable-01">
+          <img class="img" loading="lazy" width="2560" height="1440" src="img/20170325_114825_darktable_01_616w.webp" alt="" srcset="img/20170325_114825_darktable_01_616w.webp 616w, img/20170325_114825_darktable_01_1240w.webp 1240w, img/20170325_114825_darktable_01_556w.webp 556w" sizes="(max-width: 1255px) 616px, (max-width: 1919px) 1240px, 556px">          <figcaption tabindex="0">Parque Estadual Campos do Jordão<small>São Paulo, 25 de março de 2017</small></figcaption>
+        </figure>
+              <figure id="IMG-20150813-090955-darktable">
+          <img class="img" loading="lazy" width="1681" height="400" src="img/IMG_20150813_090955_darktable_616w.webp" alt="" srcset="img/IMG_20150813_090955_darktable_616w.webp 616w, img/IMG_20150813_090955_darktable_1311w.webp 1311w" sizes="(max-width: 1919px) 616px, 1311px">          <figcaption tabindex="0">Cerrado até o horizonte<small>Bonito, Mato Grosso do Sul, 13 de agosto de 2015</small></figcaption>
+        </figure>
+              <figure id="IMG-20150811-161509-darktable">
+          <img class="img" loading="lazy" width="1791" height="2388" src="img/IMG_20150811_161509_darktable_616w.webp" alt="" srcset="img/IMG_20150811_161509_darktable_616w.webp 616w, img/IMG_20150811_161509_darktable_412w.webp 412w, img/IMG_20150811_161509_darktable_362w.webp 362w" sizes="(max-width: 1255px) 616px, (max-width: 1919px) 412px, 362px">          <figcaption tabindex="0">Lara<small>Bonito, Mato Grosso do Sul, 11 de agosto de 2015</small></figcaption>
+        </figure>
+              <figure id="IMG190-darktable">
+          <img class="img" loading="lazy" width="1215" height="810" src="img/IMG190_darktable_616w.webp" alt="" srcset="img/IMG190_darktable_616w.webp 616w, img/IMG190_darktable_821w.webp 821w" sizes="(max-width: 1255px) 616px, 821px">          <figcaption tabindex="0">2 de janeiro de 2012</figcaption>
+        </figure>
+              <figure id="img-4652864780-8c30cfabab-o">
+          <img class="img" loading="lazy" width="1280" height="800" src="img/4652864780_8c30cfabab_o_767w.webp" alt="">          <figcaption tabindex="0">&quot;Steel Life&quot;<small>27 de abril de 2008</small></figcaption>
+        </figure>
+              <figure id="DSC08532">
+          <img class="img" loading="lazy" width="1280" height="960" src="img/DSC08532_616w.webp" alt="">          <figcaption tabindex="0">Yuri<small>24 de março de 2008</small></figcaption>
+        </figure>
+              <figure id="DSC08434">
+          <img class="img" loading="lazy" width="1280" height="960" src="img/DSC08434_616w.webp" alt="">          <figcaption tabindex="0">Gasparzinho<small>5 de março de 2008</small></figcaption>
+        </figure>
+              <figure id="DSC06852">
+          <img class="img" loading="lazy" width="1280" height="960" src="img/DSC06852_616w.webp" alt="">          <figcaption tabindex="0">Floor Jansen, After Forever<small>Circo Voador, Rio de Janeiro, 15 de outubro de 2006</small></figcaption>
+        </figure>
+              <figure id="DSC06066">
+          <img class="img" loading="lazy" width="1024" height="1365" src="img/DSC06066_616w.webp" alt="" srcset="img/DSC06066_616w.webp 616w, img/DSC06066_445w.webp 445w" sizes="(max-width: 1255px) 616px, 445px">          <figcaption tabindex="0">Barney<small>25 de julho de 2006</small></figcaption>
+        </figure>
+              <figure id="DSC05611">
+          <img class="img" loading="lazy" width="1024" height="768" src="img/DSC05611_616w.webp" alt="" srcset="img/DSC05611_616w.webp 616w, img/DSC05611_788w.webp 788w" sizes="(max-width: 1255px) 616px, 788px">          <figcaption tabindex="0">Fred<small>22 de maio de 2006</small></figcaption>
+        </figure>
+              <figure id="DSC04885">
+          <img class="img" loading="lazy" width="1024" height="768" src="img/DSC04885_721w.webp" alt="">          <figcaption tabindex="0">‟Françoise et Richard”<small>Praia de Ipanema, Rio de Janeiro, 10 de março de 2006</small></figcaption>
+        </figure>
+              <figure id="DSC03364">
+          <img class="img" loading="lazy" width="1280" height="960" src="img/DSC03364_616w.webp" alt="">          <figcaption tabindex="0">Barney bebê<small>8 de outubro de 2005</small></figcaption>
+        </figure>
+              <figure id="DSC03340">
+          <img class="img" loading="lazy" width="1280" height="960" src="img/DSC03340_616w.webp" alt="">          <figcaption tabindex="0">Fred bebê<small>8 de outubro de 2005</small></figcaption>
+        </figure>
+              <figure id="DSC00791-darktable">
+          <img class="img" loading="lazy" width="2048" height="1536" src="img/DSC00791_darktable_616w.webp" alt="">          <figcaption tabindex="0">Loira procurando uma casa nova para ter seus filhotes<small>2 de julho de 2005</small></figcaption>
+        </figure>
+              <figure id="DSC08616">
+          <img class="img" loading="lazy" width="1024" height="768" src="img/DSC08616_616w.webp" alt="">          <figcaption tabindex="0">Yuri<small>13 de abril de 2005</small></figcaption>
+        </figure>
+            </main>
+</body>
+
+</html>
